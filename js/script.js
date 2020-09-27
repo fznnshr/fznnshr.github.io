@@ -1,5 +1,23 @@
+$(".document").ready(function () {});
 let navlink = document.querySelectorAll(".nav-link");
 let navbar = document.querySelector(".navbar");
+
+$(".page-scroll").on("click", function (e) {
+  var tujuan = $(this).attr("href");
+  var elementTujuan = $(tujuan);
+
+  $("html").animate(
+    {
+      scrollTop: elementTujuan.offset().top - 80,
+    },
+    1000,
+    "swing"
+  );
+  // console.log($("html").scrollTop());
+  // console.log(elementTujuan.offset().top);
+
+  e.preventDefault();
+});
 window.onscroll = function () {
   if (document.documentElement.scrollTop > 140) {
     navbar.classList.add("bg-white", "shadow-sm");
@@ -7,13 +25,6 @@ window.onscroll = function () {
     navbar.classList.remove("bg-white", "shadow-sm");
   }
 };
-
-for (let i = 0; i < navlink.length; i++) {
-  navlink[i].addEventListener("click", function (e) {
-    e.preventDefault;
-    console.log("nav-link");
-  });
-}
 
 TESTER = document.getElementById("tester");
 
@@ -34,9 +45,9 @@ var data = [
 
 var layout = {
   //   title: "Tekanan Bunyi Pada Ruangan",
-  autosize: true,
-  //   width: 600,
-  //   height: 500,
+  autosize: false,
+  width: 400,
+  height: 400,
   scene: {
     xaxis: { title: "Room Depth" },
     yaxis: { title: "Room Width" },

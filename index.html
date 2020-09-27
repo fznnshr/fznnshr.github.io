@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" id="home">
+  <head \>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/plotly-latest.min.js"></script>
     <title>SoundQM</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Sound.qm</a>
+          <a class="navbar-brand page-scroll" href="#home">Sound.qm</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -31,10 +26,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto menu">
-              <a class="nav-link active mr-4" href="#"
+              <a class="nav-link active mr-4 page-scroll" href="#data"
                 >Data <span class="sr-only">(current)</span></a
               >
-              <a class="nav-link active" href="#">Graph</a>
+              <a class="nav-link active page-scroll" href="#graph">Graph</a>
             </div>
           </div>
         </div>
@@ -48,9 +43,14 @@
     </header>
 
     <main>
-      <div class="container border-bottom">
+      <div class="container border-bottom mt-5">
         <article id="data">
-          <div class="row mt-n5">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="text-center">DATA</h1>
+            </div>
+          </div>
+          <div class="row mt-5">
             <div class="col-md-6">
               <div
                 class="card bg-light mb-3 mx-auto shadow"
@@ -88,33 +88,32 @@
           </div>
         </article>
       </div>
-      <div class="container">
-        <article id="graph">
-          <div class="row mt-5">
-            <div class="col-md-12">
+      <article id="graph">
+        <div class="container mt-5">
+          <div class="row mt-5 justify-content-around">
+            <div class="col-md-5 my-auto">
+              <h1>Graph</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia excepturi, eveniet cumque recusandae ut quis repellat
+                dolorum, nesciunt ducimus voluptas aut accusantium. Quam dolores
+                quod fugiat tempora nulla omnis sint.
+              </p>
+            </div>
+            <div class="col-md-5">
               <div id="tester"></div>
             </div>
           </div>
-        </article>
-      </div>
+        </div>
+      </article>
     </main>
-    <footer></footer>
+    <footer class="text-center">
+      <p>Copyright &#169; 2020 - fznnshr. All rights reserved</p>
+    </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
