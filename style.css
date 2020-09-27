@@ -1,19 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-.navbar-brand {
-  font-family: "Syne", sans-serif;
-  font-size: 30px;
-  font-weight: bolder;
-}
-.menu {
-  font-family: "Nunito", sans-serif;
-  font-weight: bolder;
-}
-.section-background {
-  background-image: url("image/fluid-background.png");
-  background-size: cover;
-  height: 700px;
-}
-.jumbotron .container {
-  padding: 150px;
+@media (min-width: 992px) {
+  .navbar-brand {
+    font-family: "Syne", sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .menu {
+    font-family: "Nunito", sans-serif;
+    font-weight: bolder;
+  }
+  .section-background {
+    background-image: url("image/fluid-background.png");
+    background-size: cover;
+    height: 700px;
+  }
+  .jumbotron .container {
+    padding: 150px;
+  }
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::before {
+    content: "";
+    width: 0;
+  }
+  .nav-link:hover::before {
+    content: "";
+    display: block;
+    background-color: #e43f29;
+    height: 2px;
+    width: 50%;
+    border-radius: 22%;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    transition: width 0.5s;
+  }
+  #grafik {
+    height: 600px;
+  }
 }
