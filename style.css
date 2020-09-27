@@ -16,7 +16,7 @@
     height: 700px;
   }
   .jumbotron .container {
-    padding: 150px;
+    padding: 180px;
   }
   .nav-link {
     position: relative;
@@ -37,7 +37,19 @@
     left: 25%;
     transition: width 0.5s;
   }
-  #grafik {
-    height: 600px;
+  .text-size-custom {
+    font-size: 7rem;
+  }
+  #tester {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 400px;
+  }
+  #data {
+    margin-bottom: 100px;
+  }
+  #graph {
+    height: 700px;
   }
 }

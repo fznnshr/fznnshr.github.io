@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <title>SoundQM</title>
   </head>
   <body>
@@ -33,7 +34,7 @@
               <a class="nav-link active mr-4" href="#"
                 >Data <span class="sr-only">(current)</span></a
               >
-              <a class="nav-link active" href="#">Grafik</a>
+              <a class="nav-link active" href="#">Graph</a>
             </div>
           </div>
         </div>
@@ -41,26 +42,61 @@
       <div class="jumbotron jumbotron-fluid section-background">
         <div class="container text-center">
           <h1 class="display-4">Sound Quality Measurement</h1>
-          <p class="lead">Aplikasi untuk mengukur kualitas suara pada suatu ruangan </p>
+          <p class="lead">Application to measure the sound quality in a room</p>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="container">
+      <div class="container border-bottom">
         <article id="data">
-          <div class="row">
-            <div class="col-md-8">
-                <h4>Data</h4>
-                <h5>Intensitas Bunyi</h5>
-                <h5>Waktu Dengung</h5>   
+          <div class="row mt-n5">
+            <div class="col-md-6">
+              <div
+                class="card bg-light mb-3 mx-auto shadow"
+                style="max-width: 30rem"
+              >
+                <div class="card-header font-weight-bolder text-center">
+                  Sound Intensity
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center text-size-custom">70dB</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="card bg-light mb-3 mx-auto shadow"
+                style="max-width: 30rem"
+              >
+                <div class="card-header font-weight-bolder text-center">
+                  Reverberation Time (RT)
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center text-size-custom">70s</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </article>
-        
-        <article id="grafik">
-          <h2>Grafik</h2>
+      </div>
+      <div class="container">
+        <article id="graph">
+          <div class="row mt-5">
+            <div class="col-md-12">
+              <div id="tester"></div>
+            </div>
+          </div>
         </article>
+      </div>
     </main>
     <footer></footer>
 
