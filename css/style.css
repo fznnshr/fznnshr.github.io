@@ -1,6 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
+/* mobile */
+.navbar-brand {
+  font-family: "Syne", sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.menu {
+  font-family: "Nunito", sans-serif;
+  font-weight: bolder;
+}
+.section-background {
+  background-image: url("../image/fluid-background.png");
+  background-size: cover;
+  height: 500px;
+}
+.jumbotron .container {
+  padding-top: 100px;
+}
+.display-4 {
+  font-size: 35px;
+}
+.nav-link {
+  font-size: 12px;
+}
+.text-size-custom {
+  font-size: 64px;
+}
+#tester {
+  margin-left: 4;
+  margin-right: -15px;
+  width: 200px;
+  height: 400px;
+}
+#data {
+  margin-bottom: 100px;
+}
+#tester {
+  width: 100%;
+}
+main h1 {
+  color: #c3463a;
+}
+footer {
+  padding-top: 15px;
+  padding-bottom: 1px;
+  width: 100%;
+  background-color: #e9ecef;
+  color: black;
+  font-size: 12px;
+}
+.card {
+  margin-top: 20px;
+}
+#graph h1 {
+  text-align: center;
+}
+#graph h1 p {
+  text-align: justify;
+}
+#graph {
+  margin-bottom: 50px;
+}
+
 @media (min-width: 992px) {
   .navbar-brand {
     font-family: "Syne", sans-serif;
@@ -19,8 +82,12 @@
   .jumbotron .container {
     padding: 180px;
   }
+  .display-4 {
+    font-size: 48px;
+  }
   .nav-link {
     position: relative;
+    font-size: 16px;
   }
   .nav-link::before {
     content: "";
@@ -66,62 +133,3 @@
     font-size: 12px;
   }
 }
-
-/* mobile */
-/* .navbar-brand {
-  font-family: "Syne", sans-serif;
-  font-size: 25px;
-  font-weight: bolder;
-}
-.menu {
-  font-family: "Nunito", sans-serif;
-  font-weight: bolder;
-}
-.section-background {
-  background-image: url("../image/fluid-background.png");
-  background-size: cover;
-  height: 500px;
-}
-.jumbotron .container {
-  padding: 100px;
-}
-.display-4 {
-  font-size: 35px;
-}
-.nav-link {
-  font-size: 15px;
-}
-.text-size-custom {
-  font-size: 64px;
-}
-#tester {
-  margin-left: 4;
-  margin-right: -15px;
-  width: 200px;
-  height: 400px;
-}
-#data {
-  margin-bottom: 100px;
-}
-#graph {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-#graph {
-  margin-top: -10px;
-  text-align: center;
-}
-main h1 {
-  color: #c3463a;
-}
-footer {
-  padding-top: 15px;
-  padding-bottom: 1px;
-  width: 100%;
-  background-color: #e9ecef;
-  color: black;
-  font-size: 12px;
-}
-.card {
-  margin-top: 20px;
-} */

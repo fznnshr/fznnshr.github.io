@@ -45,9 +45,9 @@ var data = [
 
 var layout = {
   //   title: "Tekanan Bunyi Pada Ruangan",
-  autosize: false,
-  width: 400,
-  height: 400,
+  autosize: true,
+  // width: 300,
+  // height: 400,
   scene: {
     xaxis: { title: "Room Depth" },
     yaxis: { title: "Room Width" },
@@ -60,4 +60,4 @@ var layout = {
     t: 0,
   },
 };
-Plotly.newPlot(TESTER, data, layout);
+Plotly.newPlot(TESTER, data, layout, { responsive: true });
