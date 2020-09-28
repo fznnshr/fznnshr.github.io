@@ -2,7 +2,7 @@ $(".document").ready(function () {});
 let navlink = document.querySelectorAll(".nav-link");
 let navbar = document.querySelector(".navbar");
 
-$(".page-scroll").on("click", function (e) {
+$(".page-scroll").click(function (e) {
   var tujuan = $(this).attr("href");
   var elementTujuan = $(tujuan);
 
@@ -26,8 +26,20 @@ window.onscroll = function () {
   }
 };
 
-TESTER = document.getElementById("tester");
+$(window).scroll(function () {
+  var jarakScroll = $(window).scrollTop();
 
+  $("article").each(function (i) {
+    if ($(this).position().top <= jarakScroll + 150) {
+      $(".nav-link").removeClass("active-custom");
+      $(".nav-link").eq(i).addClass("active-custom");
+    } else {
+      $(".nav-link").eq(i).removeClass("active-custom");
+    }
+  });
+});
+
+TESTER = document.getElementById("tester");
 // z_data[y][x] = z
 var z_data = [
   [0, 0, 0, 0],

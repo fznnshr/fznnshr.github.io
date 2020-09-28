@@ -132,4 +132,15 @@ footer {
     color: black;
     font-size: 12px;
   }
+  .active-custom::before {
+    content: "";
+    display: block;
+    background-color: #e43f29;
+    height: 2px;
+    width: 50%;
+    border-radius: 22%;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+  }
 }
